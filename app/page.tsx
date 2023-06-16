@@ -119,9 +119,7 @@ export default function Home() {
             <h2 className='text-black text-xl font-bold'>
               No results
             </h2>
-            <p>
-              {allCars?.message}
-            </p>
+
           </div>
         )}
 

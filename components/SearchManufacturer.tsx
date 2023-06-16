@@ -6,7 +6,7 @@ import { Transition, Combobox } from "@headlessui/react";
 import Image from 'next/image';
 import { useState, Fragment } from 'react';
 
-const SearchManufacturer = ({ selected, setSelected }: SearchManufacturerProps) => {
+const SearchManufacturer = ({ manufacturer, setManufacturer, selected, setSelected }: SearchManufacturerProps) => {
 
   const [query, setQuery] = useState("")
 

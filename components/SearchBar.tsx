@@ -21,7 +21,7 @@ const SearchButton = ({ otherClasses }: {otherClasses:string}) => (
   </button>
 )
 
-const SearchBar = ({ setManufacturer, setModel }) => {
+const SearchBar = ({ setManufacturer, setModel }: any) => {
 
   const router = useRouter();
 
@@ -47,8 +47,9 @@ const SearchBar = ({ setManufacturer, setModel }) => {
       <div className='searchbar__item'>
         <SearchManufacturer
           selected={searchManufacturer}
-          setSelected={setSearchManufacturer}
-        />
+          setSelected={setSearchManufacturer} manufacturer={''} setManufacturer={function (manufacturer: string): void {
+            throw new Error('Function not implemented.');
+          } }        />
         <SearchButton otherClasses="sm:hidden"/>
       </div>
       <div className='searchbar__item'>
